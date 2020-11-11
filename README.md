@@ -30,6 +30,7 @@
   > - Run `source venv/bin/activate`
 - Run `pip install -r requirements`
 - Download and extract `goturn.caffemodel` and `goturn.prototxt` files from this [link](https://github.com/opencv/opencv_extra/tree/c4219d5eb3105ed8e634278fad312a1a8d2c182d/testdata/tracking) for run GOTURN Algorithm.
+- Put these files in to the project directory.
 
 ### Usage
 
