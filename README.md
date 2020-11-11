@@ -1,13 +1,13 @@
 # 🕵️‍♂️ Object Tracking Algorithms with OpenCV
 
-### [1. BOOSTING](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/1.BOOSTING)
-### [2. MIL](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/2.MIL)
-### [3. KCF](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/3.KCF)
-### [4. TLD](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/4.TLD)
-### [5. MEDIANFLOW](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/5.MEDIANFLOW)
-### [6. GOTURN](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/6.GOTURN)
-### [7. MOSSE](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/7.MOSSE)
-### [8. CSRT](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/8.CSRT)
+1. **[BOOSTING](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/1.BOOSTING)**
+2. **[MIL](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/2.MIL)**
+3. **[KCF](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/3.KCF)**
+4. **[TLD](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/4.TLD)**
+5. **[MEDIANFLOW](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/5.MEDIANFLOW)**
+6. **[GOTURN](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/6.GOTURN)**
+7. **[MOSSE](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/7.MOSSE)**
+8. **[CSRT](https://github.com/zumrudu-anka/python-opencv-object-tracking-algorithms/blob/main/ALGORITHMS/8.CSRT)**
 
 ### Running Sample With KCF
 
