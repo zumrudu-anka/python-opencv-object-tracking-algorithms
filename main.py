@@ -9,7 +9,7 @@ if __name__ == '__main__' :
     # Instead of MIL, you can also use
 
     tracker_types = ['BOOSTING', 'MIL','KCF', 'TLD', 'MEDIANFLOW', 'GOTURN', 'MOSSE', 'CSRT']
-    trackerSelection = 2
+    trackerSelection = 0
     tracker_type = tracker_types[trackerSelection]
 
     if int(minor_ver) < 3:
@@ -37,7 +37,7 @@ if __name__ == '__main__' :
     if fromCam:
         video = cv2.VideoCapture(0)
     else:
-        fileName = "drone1"
+        fileName = "drone4"
         video = cv2.VideoCapture(f"./resources/inputs/videos/drones/{fileName}.mp4")
     
     frame_width = int(video.get(3))
@@ -102,15 +102,15 @@ if __name__ == '__main__' :
             ### Calculate Accuracy
 
             grayFrame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
-            dp = 0
-            for i in range(int(bbox[0]), int(bbox[0] + bbox[2])):
-            	for j in range(int(bbox[1]), int(bbox[1] + bbox[3])):
-                    if grayFirstFrame[i][j] == grayFrame[i][j]:
-                        dp += 1
-            f1 = dp / (firstBBox[2] * firstBBox[3])
-            cv2.putText(frame, "Accuracy Result : " + str(f1), (100,100), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (50,170,50), 2)
-            accuracyResultArray.append(f1)
-            print(f1)
+            # dp = 0
+            # for i in range(int(bbox[0]), int(bbox[0] + bbox[2])):
+            # 	for j in range(int(bbox[1]), int(bbox[1] + bbox[3])):
+            #         if grayFirstFrame[i][j] == grayFrame[i][j]:
+            #             dp += 1
+            # f1 = dp / (firstBBox[2] * firstBBox[3])
+            # cv2.putText(frame, "Accuracy Result : " + str(f1), (100,100), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (50,170,50), 2)
+            # accuracyResultArray.append(f1)
+            # print(f1)
 
         else :
             # Tracking failure
