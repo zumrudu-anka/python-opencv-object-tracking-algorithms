@@ -9,7 +9,8 @@ if __name__ == '__main__' :
     # Instead of MIL, you can also use
 
     tracker_types = ['BOOSTING', 'MIL','KCF', 'TLD', 'MEDIANFLOW', 'GOTURN', 'MOSSE', 'CSRT']
-    tracker_type = tracker_types[2]
+    trackerSelection = 2
+    tracker_type = tracker_types[trackerSelection]
 
     if int(minor_ver) < 3:
         tracker = cv2.Tracker_create(tracker_type)
@@ -36,8 +37,8 @@ if __name__ == '__main__' :
     if fromCam:
         video = cv2.VideoCapture(0)
     else:
-        fileName = "street.mp4"
-        video = cv2.VideoCapture(f"./resources/inputs/videos/{fileName}")
+        fileName = "drone1"
+        video = cv2.VideoCapture(f"./resources/inputs/videos/drones/{fileName}.mp4")
     
     frame_width = int(video.get(3))
     frame_height = int(video.get(4))
@@ -45,11 +46,11 @@ if __name__ == '__main__' :
     size = (frame_width, frame_height)
 
     output = cv2.VideoWriter(
-        f'./resources/outputs/videos/{fileName}',
-        cv2.VideoWriter_fourcc(*'MJPG'), 
+        f'./resources/outputs/videos/drones/{fileName}/{tracker_types[trackerSelection]}.mp4',
+        cv2.VideoWriter_fourcc(*'MJPG'),
         30,
         size
-    ) 
+    )
 
     # Exit if video not opened.
     if not video.isOpened():
