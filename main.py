@@ -8,8 +8,17 @@ if __name__ == '__main__' :
     # Set up tracker.
     # Instead of MIL, you can also use
 
-    tracker_types = ['BOOSTING', 'MIL','KCF', 'TLD', 'MEDIANFLOW', 'GOTURN', 'MOSSE', 'CSRT']
-    trackerSelection = 0
+    tracker_types = {
+        0 : 'BOOSTING',
+        1 : 'MIL',
+        2 : 'KCF',
+        3 : 'TLD',
+        4 : 'MEDIANFLOW',
+        5 : 'GOTURN',
+        6 : 'MOSSE',
+        7 : 'CSRT'
+    }
+    trackerSelection = 5
     tracker_type = tracker_types[trackerSelection]
 
     if int(minor_ver) < 3:
